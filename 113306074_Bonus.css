@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Make body fill the full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f4f4f4;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Keep a nice structure */
+    gap: 10px;
+    align-items: center;
+}
+
+h1 {
+    grid-column: 1 / 3; /* Ensure the title spans all columns */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: right;
+    margin-right: 10px;
+}
+
+input, textarea {
+    width: 300px; /* Set a smaller width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: none; /* Prevent resizing */
+}
+
+/* Styling for placeholder text */
+input::placeholder, 
+textarea::placeholder {
+    color: #888; /* Light gray placeholder text */
+    /*font-style: italic; /* Optional: Add italic style for differentiation */
+}
+
+img {
+    grid-column: 2 / 3; /* Align image to the second column */
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* For side-by-side input2 and input3 */
+.side-by-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline {
+    margin-left: 10px;
+}
